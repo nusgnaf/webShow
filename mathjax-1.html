@@ -5,11 +5,24 @@
     <script type="text/javascript"
       src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
-    <script src="vendor/avalon.js"></script>
-    <title>Quick input math!</title>
+    <script src="J/avalon.js"></script>
+    <script>
+    avalon.define({
+        $id: "mathpart",
+        fml: "a+b=c^2"
+    })；
+</script>
+<title>Quick input math!</title>
 </head>
 <body>
-    When \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
+   <section ms-controller="mathpart">
+      <input ms-duplex="fml" type="text" placeholder="input some math formula">
+       <p><script type="math/tex">{{fml}}</script>
+       </p>
+   </section>
+    When \(a+b=c\), \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
 $$x = {-b \pm \sqrt{b^2-4ac} \over 2a}.$$
+
+<section>more to haha</section>
 </body>
 </html>
