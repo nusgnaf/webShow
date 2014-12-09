@@ -10,10 +10,10 @@
     "tests"
   ],
   "dependencies": {
-    "vue": "~0.11.0",
+    "vue": "~0.11.4",
     "jquery": "~2.1.1",
     "lodash": "~2.4.1",
-    "avalon": "~1.3.7",
+    "avalon": "RubyLouvre/avalon#1.3.7.3",
     "reveal.js": "hakimel/reveal.js#~2.6.2"
   }
 }
