@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <script type="text/javascript"
-      src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      src="bower_components/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
     </script>
     <script src="bower_components/avalon/avalon.js"></script>
     <script>
@@ -17,7 +17,7 @@
 <body>
    <section ms-controller="mathpart">
       <input ms-duplex="fml" type="text" placeholder="input some math formula">
-       <p><script type="math/tex">{{fml}}</script>
+       <p id="mathout">\({}\)
        </p>
    </section>
     When \(a+b=c\), \(a \ne 0\), there are two solutions to \(ax^2 + bx + c = 0\) and they are
